@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Barra de título con el nombre de la aplicación -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gestión Escolar App"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Campo de entrada para el correo electrónico -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo Electrónico"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Campo de entrada para la contraseña -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Botón para iniciar sesión -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesión"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Enlace para la recuperación de contraseña -->
+    <TextView
+        android:id="@+id/forgotPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Olvidaste tu contraseña?"
+        android:layout_below="@id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>
